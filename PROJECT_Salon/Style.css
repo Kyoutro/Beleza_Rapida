@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Tela de Login */
+.background{
+    background-image: linear-gradient(white,#5A189A);
+    height: 100vh;
+    justify-content: center;
+}
+.login{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.login input[type]{
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.login button{
+background-color: #240046;
+color: white;
+width: 157px;
+padding: 5px;
+border-radius: 5px;
+border-style: none;
+}
+.login img{
+    width: 360px;
+}
+.login a{
+    color: white;
+}
+
+/* Cadastro */
+.cad{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cad input[type],[type=date]{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: gray;
+}
+.cad button{
+    background-color: #9D4EDD;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.cad a{
+    color: white;
+    text-decoration: none;
+}
+.flexbutton{
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.flexduobutton{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.flexduobutton a{
+    color: white;
+    text-decoration: none
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 250px;
+}
+
+/* Menu do Catalogo */
+header{
+    height:113px;
+    width:100%;
+    position: fixed;
+    top: 0;
+    background-color: #5A189A;
+    border-radius: 0px 0px 15px 15px;
+}
+.catalogo{
+    margin-top: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.catalogo a{
+    text-decoration: none;
+}
+.categoria{
+    background-color: #9D4EDD;
+    width: 319px;
+    height: 74px;
+    border-radius: 55px 15px 15px 55px;
+}
+.categoria img{
+    float: inline-start;
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+}
+.categoria p{
+    color: white;
+    font-size: large;
+}
+.serviços{
+    background-color: #9D4EDD;
+    width: 319px;
+    height: 113px;
+    border-radius: 55px 15px 15px 55px;
+}
+.serviços img{
+    float: inline-start;
+    border-radius: 50%;
+    width: 75px;
+    margin-right: 10px;
+}
+.serviços p{
+    color: white;
+    font-size: large;
+}
+.destaque{
+    font-weight: bold;
+}
+.descrição{
+    color: white;
+    font-weight: 50px;
+    padding-right: 5px;
+}
+
+/* Tela de Avaliação */
+.avaliação{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avaliação textarea{
+    width: 300px;
+    height: 150px;
+    resize: none;
+    background-color: #E8E8E8;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
+}
+.avaliação button{
+    background-color: #64548c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 92px;
+    height: 26px;
+    box-shadow: 1px 1px 5px gray;
+}
+.rating {
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+.rating input:checked ~ label {
+    color: gold;
+}
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+/* Perfil do Usuário */
+.perfil{
+    margin-top: 170px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.perfil input[type],[type=date]{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #9D4EDD;
+    color: white;
+    box-shadow: 0.5px 0.5px 5px gray;
+}
+.perfil ::placeholder{
+    color: white;
+}
+.perfil button{
+    background-color: #7c6c9c;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+/* Alterar ou adicionar serviços */
+.editservico{
+    margin-top: 170px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.editservico input[type]{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E8E8;
+    box-shadow: 0.5px 0.5px 5px gray;
+}
+.editservico button{
+    background-color: #7c6c9c;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+/* Menu do ADM */
+.admop{
+    display: flex;
+    align-items: center;
+    background-color: #9D4EDD;
+    width: 319px;
+    height: auto;
+    border-radius: 20px 15px 15px 20px;
+    box-shadow: 3px 3px 3px gray;
+}
+.admop p{
+    color: white;
+    font-size: 40px;
+}
+.icon{
+    margin-right: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    background-color: #D9D9D9;
+}
+.icon img{
+    width: 50px;
+}
+
+/* Cadastro de funcionários */
+.cadfunc{
+    margin-top: 170px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cadfunc input[type],[type=date]{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E8E8;
+    color: gray;
+    box-shadow: 0.5px 0.5px 5px gray;
+}
+.cadfunc ::placeholder{
+    color: gray;
+}
+.cadfunc button{
+    background-color: #7c6c9c;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
